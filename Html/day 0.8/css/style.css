@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+body{
+    font-family: 'Jura';
+
+    margin: 0;
+    background-color: black;
+    height: px;
+    background-image: url(/fotoes/goa2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header a {
+    margin-left: 150px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    padding: 200px;
+    padding-top: 30px;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header{
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-image: url(/fotoes/goa.jpg);
+}
+h1{
+    margin-left: 33%;
+    font-size: 40px;
+    font-family:'Gill Sans MT';
+    font-style:oblique;
+    border: 2px solid rgb(1, 24, 1);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: 0;
+}
+
+
+#liders{
+    font-size: x-large;
+    padding: 50px;
+    border: 2px solid rgb(1, 62, 1);
+    width: fit-content;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+}
+#goacurses{
+    margin-left: 500px;
+    margin-top: -428px;
+    font-size: x-large;
+    border: 2px solid rgb(1, 62, 1);
+    width: fit-content;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
+#goacurses p{
+    text-align: center;
+}
+#goarules{
+    font-size: x-large;
+
+    border: 2px solid rgb(1, 62, 1);
+    width: fit-content;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+
+    margin-left: 790px;
+    margin-top: -280px;
+}
+#goarules p {
+    text-align: center;
+}
+
+#dropdown{
+    border: 2px solid rgb(1, 62, 1);
+    width: fit-content;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+
+    margin-left: 1200px;
+    margin-top: -280px;
+}
+#dropdown select{
+    margin-left: 70px;
+    font-style: italic;
+    border-radius: 5px;
+
+}

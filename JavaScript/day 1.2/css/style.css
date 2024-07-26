@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url(/fotos/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    padding:  0 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    font-family:sans-serif;
+    color:whitesmoke;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 30px;
+    width: 280px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(237, 235, 235);
+    text-align: center;
+    font-family:sans-serif;
+}
+div{
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    padding: 25px;
+}
+label{
+    font-size: larger;
+    color: whitesmoke;
+}
+#submitBut{
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: #3768a4;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+#submitBut:active{
+    background-color: #1f3f66 ;
+    transform: scale(0.9);
+}

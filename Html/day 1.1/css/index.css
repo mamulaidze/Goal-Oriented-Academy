@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+header h1{
+    text-align: center;
+}
+main h2{
+    padding-top: -30px;
+}
+main{
+    border:1px solid rgb(172, 172, 172);
+    border-radius: 10px;
+    width: min-content;
+    padding: 30px;
+    margin-left: 40%
+}
+
+input{
+    text-align: center;
+    font-size:1vi;
+    margin-bottom: 20px;
+    width: 250px;
+}
+form button{
+    margin-left:23%;
+    width:150px;
+    border-radius: 5px;
+}
+
+label{
+    font-weight: bold;
+}

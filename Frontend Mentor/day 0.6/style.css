@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    background-image:url(/fotoes/linux-programmer-pixel-art-4k-ld.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    
+}
+         /* working on header */
+
+header{
+    width: 100%;
+}
+header nav a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 60px;
+}
+
+#manylinks a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#manylinks{
+    display: flex;
+    justify-content: space-between;
+    width:40%;
+    margin-left: 16rem;
+}
+
+#navbutt{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin-left:2rem ;
+}
+nav button:hover{
+    background-color: rgb(139, 47, 225);
+}
+nav button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(184, 115, 248);
+}
+  
+
+   /* working on main content */
+main{
+    margin-left:90px ;
+    margin-top: 100px;
+}
+
+
+#mainicons{
+    display: flex;
+    gap: 20px;
+    margin-left:30px;
+    padding: 0 0 30px 0;
+}
+
+
+main h1 {
+    font-size:65px ;
+    color: white;
+}
+main p {
+    color: white;
+    font-size: 14px;
+}
+
+#maintxt{
+    display: flex;
+    flex-direction:column ;
+    gap: 40px;
+}
+#mainbutt{
+    display: flex;
+    gap: 40px;
+}
+.mainbutton{
+    padding: 13px;
+    color: white;
+    background-color:rgb(184, 115, 248);
+    border-radius: 7px;
+    font-size: large;
+    border: none;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+

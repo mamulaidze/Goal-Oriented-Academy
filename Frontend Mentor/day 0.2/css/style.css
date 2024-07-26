@@ -1,0 +1,58 @@
+body{
+    background-color:hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+#maindiv{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(216, 53%, 17%);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+#fotodiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fotodiv img{
+    width: 250px;
+    border-radius: 7px;
+}
+#textdiv{
+    display: flex;
+    flex-direction: column;
+    color:rgb(116, 147, 182);
+}
+#textdiv h2 {
+    color:whitesmoke ;
+}
+#textdiv span{
+    color:hsl(178, 100%, 50%);
+}
+#gansakutrebulip{
+    display:flex;
+    gap: 95px;
+}
+footer{
+    display: flex;
+    gap: 20px;
+}
+footer img{
+    width:50px;
+}
+
+hr{
+    width: 100%;
+}
+
+h2:hover{
+    cursor: pointer;
+}
+

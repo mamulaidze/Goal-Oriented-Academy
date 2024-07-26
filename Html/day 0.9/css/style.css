@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+body{
+    margin:0;
+    background-color:aliceblue;
+    font-family: 'Dosis';
+    font-size: large;
+    height: 2000px;
+}
+header{
+    font-size: xx-large;
+    background-color: #222831;
+    position: sticky;
+    top:0;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 100px;
+}
+main h1 {
+    text-align: center;
+    font-size: 40px;
+    font-style:oblique;
+}
+main p{
+    margin-left: 200px;
+}
+#divn1{
+    margin-left: 20px;
+    border: 2px solid gray;
+    width: min-content;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: rgb(88, 88, 88);
+    box-shadow: -15px 15px;
+}
+#divn1:hover{
+    background-color: rgb(41, 40, 40);
+}
+
+#sec_1img img{
+    width: 400px;
+    margin-left: 120px;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: -5px 5px;
+}
+#sec_1img p {
+    font-size: x-large;
+    display: inline;
+    margin-left: 150px;
+    margin-top: 20px;
+    
+}
+#sec_1img{
+    margin-left: 850px;
+    margin-top: -540px;
+    border: 2px solid gray;
+    border-radius: 100px;
+    background-color: rgb(88, 88, 88);
+    box-shadow: -15px 15px;
+    height: 450px;
+}
+#sec_1img:hover{
+    background-color: rgb(41, 40, 40);
+}
+#productsdiv h2{
+    text-align: center;
+    font-size:40px ;
+    font-style: italic;
+}
+#sec_products{
+    margin-left: 20px;
+    border: 2px solid gray;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: rgb(88, 88, 88);
+    box-shadow: -15px 15px;
+    margin-top: 300px;
+}
+
+#sec_products:hover{
+    background-color: rgb(41, 40, 40);
+}
+
+#productimages img{
+    width: 500px;
+    padding: 80px;
+    margin-left: 850px;
+}
+#productimages{
+    margin-top: -1200px;
+
+    border-radius: 100px;
+    background-color: rgb(88, 88, 88);
+    box-shadow: -15px 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    border-top-right-radius: 40px;
+    border-top-left-radius:40px ;
+}

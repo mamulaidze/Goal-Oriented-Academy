@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6B728E;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ol{
+    list-style:circle;
+}
+
+ul li {
+    padding-top: center;
+    font-family: 'Playfair Display';
+    display: inline;
+    list-style: none;  
+    font-size: 2rem;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    display: inline;
+}
+footer{
+    height: 250px;
+    padding-top: 70px;
+    background-color: #50577A;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+form{
+    margin-left: 80%;
+}
+input{
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#header {
+    padding: 1% ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #404258;
+    height: 3rem;
+}
+
+#home {
+    padding: 2%;
+}
+
+#about {
+    padding-left: 55%;
+}
+
+#contact {
+    padding-left: 10%;
+}
+
+#signup {
+    position: fixed;
+    font-size: x-large;
+    font-style: italic;
+    margin-left: 90%;
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgb(93, 92, 92);
+}
+
+#signup:hover {
+    font-size: xx-large;
+    transition: 1.3s;
+}
+
+#myfoto {
+    width: 250px;
+    border-radius: 900px;
+    padding-left: 20px;
+}
+
+#greeting {
+    position: relative;
+    top: -200px;
+    margin-left: 10%;
+    font-size: 4em;
+    font-style:italic;
+}
+
+#content {
+    margin-top: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 100px;
+    background-color: rgb(152, 151, 151);
+}
+#CEO{
+    margin-left: -50%;
+    margin-top: 200px;
+    font-size: 3rem;
+}
+#spangbob{
+    width: 250px;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+#wolf{
+    width: 250px;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+#aboutdiv{
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(152, 151, 151);
+    border-radius: 70px;
+}
+#kuntazi{
+    width: 250px;
+    margin-top: -370px;
+    margin-left: 80%;
+    
+    border-radius: 20px;
+}
+
+#submit{
+    margin-left: 36%;
+}
+#submit:hover{
+    background-color: green;
+}
+#contactdiv{
+    background-color:#30344a;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 30px;
+}
+#footnav{
+    font-size: xx-large;
+    margin-left: -390%;
+    margin-top: -200px;
+}
+#navp{
+    font-size: xx-large;
+    margin-left: -390%;
+    margin-top: 250px;
+}
+#liname{
+    list-style: none;
+    margin-left: -3%;
+}

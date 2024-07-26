@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="maindiv">
+    <!-- first section -->
+    <div id="firstsec">
+    <!-- Rating state start -->
+    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+      <path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/>
+    </svg>
+    
+
+      <h1 id="h1">How did we do?</h1>
+
+      <p id="paragraph">Please let us know how we did with your support <br>request. All feedback is appreciated 
+      to help us <br>improve our offering!</p>
+    </div>
+    <!-- second section -->
+    <div id="secondsec">
+      <button class="buttons">1</button>
+      <button class="buttons">2</button>
+      <button class="buttons">3</button>
+      <button class="buttons">4</button>
+      <button class="buttons">5</button>
+      <!-- submit button -->
+    </div>
+    <div id="subdiv">
+      <button id="subbutton" onclick="changeContent()">S U B M I T</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

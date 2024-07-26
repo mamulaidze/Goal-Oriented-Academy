@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+h1{
+    margin-left: 580px;
+
+    font-family:"Dancing Script" ;
+    font-style:oblique;
+    font-size: 50px;
+
+     color: rgb(238, 5, 5);
+}
+.spkyfoto{
+
+    margin-left: 500px;
+
+
+    width: 30%;
+    border: 3px solid red;
+    border-style: solid;
+}
+pre{
+
+    font-family: "Dancing Script" ;
+    font-size: 30px;
+    font-style: italic;
+
+    text-decoration: none ; 
+    text-decoration-color: rgb(255, 0, 0);
+    text-decoration-line: none;
+
+    color: red;
+}

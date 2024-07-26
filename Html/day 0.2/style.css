@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
+h1{
+    font-family: 'Scope One';
+    color: rgb(16, 150, 16);
+    margin-left:40%;
+
+    display: inline;
+}
+
+h2{
+    font-family: 'Scope One';
+    margin-left: 200px;
+    color: brown;
+
+    display: inline;
+}
+
+h3{
+    display: inline;
+    
+    margin-left: 650px;
+    color: brown;
+}
+
+p{
+    font-family: 'Scope One';
+    
+}
+pre{
+    font-family: 'Scope One';
+    display: inline;
+}
+
+.pre1{
+    
+}
+
+.pre2{
+    
+    
+    float: right ;
+    
+}
+
+.stylep1{
+    color: aqua;
+    font-size: 20px;
+    
+}
+
+.stylep2{
+    display: inline;
+    font-size: larger;
+}
+
+
+
+.img2{
+    margin-left: 400px;
+}
+
+.but1{
+    font-size: 20px;
+    color: darkgreen;
+}
+.but2{
+    font-size:20px;
+    margin-left: 30px;
+    color:rgb(227, 183, 102);
+}
+.but3{
+    font-size:20px;
+    margin-left: 30px;
+    color: rgb(237, 107, 0);
+}   
+.but4{
+    font-size:20px;
+    margin-left: 30px;
+    color: rgb(18, 18, 174);
+}
+
+
+.contact{
+    text-decoration-line: none;
+    font-size: 20px;
+    color: brown;
+}
+gugu:hover{
+    background-color: aliceblue;
+}

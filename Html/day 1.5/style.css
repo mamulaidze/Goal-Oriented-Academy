@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divanimation{
+    height: 200px;
+    width: 200px;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 0.25s;
+    border-radius:10px ;
+}
+
+@keyframes animation {
+    0%{
+        background-color: brown;
+    }
+    30%{
+        background-color: aqua;
+        border-radius: 20%;
+    }
+    60%{
+        background-color: blueviolet;
+        transform: scale(1.6);
+        border-radius: 50%;
+    }
+    80%{
+        background-color: chartreuse;
+        transform: scale(0.4);
+        border-top-left-radius:90px ;
+        border-bottom-right-radius: 90px;
+    }
+    90%{
+        background-color: chartreuse;
+        transform: scale(0.4);
+        border-top-left-radius:90px ;
+        border-bottom-right-radius: 90px;
+    }
+    100%{
+        background-color: brown;
+    }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ypung Serif';
+    height: 230vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: hsl(30, 54%, 90%);
+}
+
+img{
+    width:100%;
+    border-radius: 10px;
+}
+b{
+    color: black;
+}
+h1{
+    font-size: 35px;
+    padding: 0 0 15px 0;
+}
+
+#img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#maincontent{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    width:500px ;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+#div1{
+    font-size: 13px;
+    padding: 20px 0;
+}
+#div1 p{
+    color:hsl(30, 10%, 34%);
+}
+ /* styling div 2 */
+#div2{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(334, 47%, 97%) ;
+    padding: 20px 0 20px 20px;
+    border-radius: 10px;
+}
+
+#div2 h4{
+    color: hsl(332, 51%, 32%);
+}
+#div2 ul{
+    padding: 15px  0 0 1rem;
+}
+#div2 li{
+    padding: 0 0 10px 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+/* styling div 3 */
+
+#div3 h2{
+    padding: 20px 0 ;
+    color: hsl(14, 45%, 36%);
+}
+#div3 ul{
+    padding: 0 0 20px 20px;
+}
+#div3 li{
+    padding: 0 0 10px 20px ;
+    color:hsl(30, 10%, 34%) ;
+}
+
+/* styling div 4 */
+#div4 h2{
+    padding:20px 0  ;
+    color:hsl(14, 45%, 36%);
+}
+
+#div4 ol{
+    padding: 0 0 20px 1rem;
+    color: hsl(30, 10%, 34%);
+}
+#div4 li{
+    padding: 0 0 5px 20px;
+}
+
+/* styling div 5 */
+
+#div5 h2{
+    color:hsl(14, 45%, 36%) ;
+    padding: 20px 0 20px 0 ;
+}
+
+#div5 p {
+    padding: 10px 0 10px;
+    color:hsl(30, 10%, 34%) ;
+}
+
+#div5{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#div5 p span{
+    margin-left: 13rem;
+}
+span{
+    color: hsl(14, 45%, 36%);
+}

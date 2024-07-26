@@ -1,0 +1,13 @@
+#inpdiv{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+}
+#divoutput{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: aqua;
+    width: min-content;
+}

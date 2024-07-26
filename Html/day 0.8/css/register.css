@@ -1,0 +1,75 @@
+body {
+    margin: 20px;
+    background-image: url(/fotoes/goa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header a {
+    margin-left: 150px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    padding: 200px;
+    padding-top: 30px;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header{
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-image: url(/fotoes/goa.jpg);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    backdrop-filter: blur(15px);
+    border: 2px solid #000;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    margin-right: 5px;
+}
+
+input {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+header img {
+    margin: 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    width: 100px;
+}
+
+header nav {
+    margin-left:70%;
+    display: flex;
+    width:100%;   
+    text-align: center;
+}
+a:hover{
+    color: rgb(68, 68, 252);
+}
+a:active{
+    color: blue;
+}

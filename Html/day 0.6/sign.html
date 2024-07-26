@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sign.css">
+    <title>Sign Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>User</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Username" required>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" placeholder="Surname" required>
+
+                <label for="lang">Languages</label>
+                <select id="lang" required>
+                    <option>Georgian</option>
+                    <option>English</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <form>
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label for="wrkphone">Work Phone</label>
+                <input type="number" id="wrkphone" placeholder="Work Phone" required>
+
+                <label for="mobphone">Mobile Phone</label>
+                <input type="number" id="mobphone" placeholder="Mobile Phone" required>
+
+                <p>Notification Preference</p>
+
+                <label for="checkboxemail">Email</label>
+                <input type="checkbox" id="checkboxemail" required>
+
+                <label for="sms">SMS</label>
+                <input type="checkbox" id="sms" required>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Security</h2>
+            <form>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+
+                <label for="confpassword">Confirm Password</label>
+                <input type="password" id="confpassword" placeholder="Confirm Password">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+</body>
+</html>
