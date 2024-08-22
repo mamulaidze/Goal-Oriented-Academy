@@ -1,0 +1,44 @@
+
+
+
+
+#inpDiv{
+    border: solid black 1px;
+    width: fit-content;
+    padding: 4px; 
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#inpDiv span{
+    cursor: pointer;   
+}
+
+
+.txtDiv{
+    width: fit-content;
+    border: solid black 1px;
+    border-radius: 6px;
+    
+}
+.txtDiv span{
+    padding: 0 5px 0 0;
+}
+.del{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.del span{
+    cursor: pointer;
+    color: white;
+}
+.txt{
+    padding: 0 5px 0 5px;
+    border-radius: 6px;
+}
+
+.clTxt{
+    border-radius: 6px;
+}
