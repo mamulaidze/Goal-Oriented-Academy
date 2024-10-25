@@ -17,7 +17,8 @@ function MoviesList() {
       <h2>ფილმების სია</h2>
       <ul>
         {arrMovieNames.map((movie, index) => (
-          <li key={index}>{movie}</li>
+          <li key={index}>{movie}
+          </li>
         ))}
       </ul>
     </div>

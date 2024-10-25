@@ -1,6 +1,6 @@
 function Header() {
     return (
-      <div>
+      <div id="nav-container">
         <nav id="nav-bar">
           <h1 id="header-h1">My React App</h1>
           <ul>
