@@ -1,30 +1,45 @@
-import React from 'react'
+import React from 'react';
 
 const Hero = () => {
   return (
-    <main className='flex content-center '>
-        <section>
-            <div>        
-                <h1 className='text-[70px] font-bold '>STUDY FROM<br></br>
-                HOME WITH EXPERT</h1>
-            </div>
-            
-            <div className='flex space-x-3 text-center'>
-            <hr className="w-0 h-[60px] border-l border-gray-500 "  />
-                <p className=' font-light text-[#4b5563] '> a learning system based on formalised <br></br>teaching with the help of resources</p>
-            </div>
-            <div>
-                <button>Get Started</button>
-                <button>Learn More</button>
-            </div>
-        </section>
-        <section>
-        <div className='ml-[150px]'>
-            <img src='src/assets/hero.png' className='w-[700px] h-[635px]'></img>
+    <main className="flex items-center justify-between px-8 py-10">
+      {/* Text Section */}
+      <section className="space-y-6 max-w-[50%]">
+        <div>
+          <h1 className="text-[50px] md:text-[70px] font-bold leading-tight">
+            STUDY FROM<br />
+            HOME WITH EXPERT
+          </h1>
         </div>
-        </section>
-    </main>
-  )
-}
 
-export default Hero
+        <div className="flex items-center space-x-3">
+          <hr className="w-0 h-[60px] border-l border-gray-500" />
+          <p className="text-gray-600 font-light leading-relaxed">
+            A learning system based on formalised <br />
+            teaching with the help of resources
+          </p>
+        </div>
+
+        <div className="flex space-x-4">
+          <button className="px-6 py-3 border border-black hover:bg-orange-500 hover:text-white font-medium rounded-md hover:scale-105 transition-transform duration-200">
+            Get Started
+          </button>
+          <button className="px-6 py-3 border border-black hover:bg-orange-500 hover:text-white font-medium rounded-md hover:scale-105 transition-transform duration-200">
+            Learn More
+          </button>
+        </div>
+      </section>
+      <section className="relative">
+        <div className="w-full max-w-[700px] ">
+          <img
+            src="src/assets/hero.png"
+            alt="Hero"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default Hero;

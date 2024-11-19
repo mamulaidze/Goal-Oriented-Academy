@@ -9,7 +9,7 @@ const Header = () => {
 ]
 
   return (
-    <header className='flex items-center justify-between px-8 py-4 text-center mt-3'>
+    <header className='flex items-center justify-between px-8 py-4 text-center  bg-custom-gradient  shadow-lg shadow-black/10 '>
         <div className='flex'>        
             <div><PiFigmaLogoLight className='w-9 h-9'/></div>
             <div className=' flex text-center px-4 text-2xl font-black font-serif'>E Guru</div>
