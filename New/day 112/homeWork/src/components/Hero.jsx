@@ -35,7 +35,7 @@ const Hero = () => {
             src="src/assets/hero.png"
             alt="Hero"
             className="w-full h-auto object-contain"
-          />
+            />
         </div>
       </section>
     </main>
