@@ -1,7 +1,8 @@
 import { CiMenuBurger } from "react-icons/ci";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
-export default function Header() {
+export default function Header() {\
+    
     const navList = [
         {
             name: "Home"
