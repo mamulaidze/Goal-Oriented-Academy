@@ -1,14 +1,23 @@
 {
   "name": "day-136",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "nodemon server/server.js",
+    "dev":"npm run dev --prefix client", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
 }
