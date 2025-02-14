@@ -1,8 +1,15 @@
 {
-  "name": "first",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  },
+  "name": "classwork",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "devDependencies": {},
   "scripts": {
     "dev": "npm run dev --prefix client",
     "start": "nodemon server.js",
@@ -11,12 +18,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "gsap": "^3.12.7",
-    "mongoose": "^8.10.0"
-  }
+  "type": "module"
 }
