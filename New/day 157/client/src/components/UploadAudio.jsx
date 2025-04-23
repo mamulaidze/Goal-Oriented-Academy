@@ -11,25 +11,22 @@ function UploadAudio() {
 
   const handleUpload = async () => {
     if (!audioFile) return alert('აირჩიე ფაილი');
-
     const formData = new FormData();
     formData.append('audio', audioFile);
 
-    try {
-      await axios.post('http://localhost:4000/api/upload', formData);
-      fetchSongs(); // ატვირთვის შემდეგ ხელახლა წამოიღოს სია
-    } catch (error) {
-      console.error('Upload failed:', error);
-    }
+    await axios.post('http://localhost:4000/api/upload', formData);
+    setAudioFile(null);
+    fetchSongs();
+  };
+
+  const handleDelete = async (id) => {
+    await axios.delete(`http://localhost:4000/api/songs/${id}`);
+    fetchSongs();
   };
 
   const fetchSongs = async () => {
-    try {
-      const res = await axios.get('http://localhost:4000/api/songs');
-      setSongs(res.data);
-    } catch (error) {
-      console.error('Fetch songs failed:', error);
-    }
+    const res = await axios.get('http://localhost:4000/api/songs');
+    setSongs(res.data);
   };
 
   useEffect(() => {
@@ -50,8 +47,16 @@ function UploadAudio() {
       <h2 className="text-xl mt-6">სიმღერები:</h2>
       <ul className="space-y-4">
         {songs.map((song) => (
-          <li key={song._id}>
-            <p className='text-red-600'>{song.title}</p>
+          <li key={song._id} className="border p-2 rounded shadow">
+            <div className="flex justify-between items-center">
+              <p>{song.title}</p>
+              <button
+                onClick={() => handleDelete(song._id)}
+                className="text-red-500 hover:text-red-700"
+              >
+                წაშლა
+              </button>
+            </div>
             <audio controls src={`http://localhost:4000/${song.filePath}`} />
           </li>
         ))}

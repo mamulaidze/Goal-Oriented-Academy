@@ -1,37 +1,57 @@
 import express from 'express';
 import multer from 'multer';
-import Song from '../models/Song.js';
 import fs from 'fs';
+import path from 'path';
+import Song from '../models/Song.js';
+import { fileURLToPath } from 'url';
 
 const router = express.Router();
 
+// dirname იმპორტისთვის
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const audioDir = 'uploads/audio';
-if (!fs.existsSync(audioDir)) {
-  fs.mkdirSync(audioDir, { recursive: true });
-}
-
-
+// Multer setup
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, audioDir),
-  filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname),
+  destination: (req, file, cb) => {
+    cb(null, path.join(__dirname, '../../uploads'));
+  },
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  },
 });
 const upload = multer({ storage });
 
-
+// Upload song
 router.post('/upload', upload.single('audio'), async (req, res) => {
-  const song = new Song({
-    title: req.body.title || req.file.originalname,
-    filePath: req.file.path,
+  const newSong = new Song({
+    title: req.file.originalname,
+    filePath: `uploads/${req.file.filename}`,
   });
-  await song.save();
-  res.json({ message: 'Uploaded!', song });
+  await newSong.save();
+  res.json(newSong);
 });
 
-
+// Get songs
 router.get('/songs', async (req, res) => {
-  const songs = await Song.find().sort({ createdAt: -1 });
+  const songs = await Song.find();
   res.json(songs);
+});
+
+// Delete song
+router.delete('/songs/:id', async (req, res) => {
+  try {
+    const song = await Song.findById(req.params.id);
+    if (!song) return res.status(404).json({ message: 'Not found' });
+
+    const filePath = path.join(__dirname, '../../', song.filePath);
+    if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+
+    await Song.findByIdAndDelete(req.params.id);
+    res.json({ message: 'Deleted' });
+  } catch (err) {
+    res.status(500).json({ message: 'Error deleting' });
+  }
 });
 
 export default router;
